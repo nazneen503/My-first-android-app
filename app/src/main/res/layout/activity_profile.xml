@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_bg"
+    tools:context=".profile">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="@dimen/dim_200"
+        android:layout_height="@dimen/dim_200"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dim_100"
+        android:layout_marginTop="@dimen/dim_200"
+        android:background="@drawable/profile_image_circle">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="@dimen/dim_150"
+        android:layout_height="@dimen/dim_150"
+        android:layout_centerInParent="true"
+        android:src="@drawable/profile_girl"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/imgProfile"
+        android:layout_width="@dimen/dim_50"
+        android:layout_height="@dimen/dim_50"
+        android:layout_marginLeft="@dimen/dim_240"
+        android:layout_marginTop="@dimen/dim_210"
+        android:background="@drawable/profile_img_camera_circle">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/profile_camera"/>
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="@dimen/dim_210"
+        android:layout_height="@dimen/dim_50"
+        android:layout_marginTop="@dimen/dim_400"
+        android:layout_centerHorizontal="true"
+        android:ems="20"
+        android:hint="Student Name"
+
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:gravity="center"/>
+    <RelativeLayout
+        android:layout_width="@dimen/dim_800"
+        android:layout_height="@dimen/dim_40"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/white"
+            android:text="Next"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#E84C3F"/>
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/white"
+            android:text="Skip"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#A8A9A4"/>
+    </RelativeLayout>
+</RelativeLayout>

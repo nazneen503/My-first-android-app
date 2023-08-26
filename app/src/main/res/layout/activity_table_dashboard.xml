@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/table_dashbrd"
+    android:layout_height="match_parent"
+    tools:context=".table_dashboard">
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </include>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclertable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dim_20">
+
+    </android.support.v7.widget.RecyclerView>
+    <!--<LinearLayout
+        android:id="@+id/table_2"
+        android:layout_width="@dimen/dim_250"
+        android:layout_height="@dimen/dim_65"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim_20"
+        android:background="@drawable/two_table_dash_box">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:text="Table Of Two"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_25"
+            android:textStyle="bold" />
+    </LinearLayout>-->
+    <!--<LinearLayout
+        android:id="@+id/table_3"
+        android:layout_width="@dimen/dim_250"
+        android:layout_height="@dimen/dim_65"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim_40"
+        android:background="@drawable/three_table_dash_box">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:text="Table Of Three"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_25"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dim_250"
+        android:layout_height="@dimen/dim_65"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim_40"
+        android:background="@drawable/four_table_dash_box">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:text="Table Of Four"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_25"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dim_250"
+        android:layout_height="@dimen/dim_65"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim_40"
+        android:background="@drawable/five_table_dash_box">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:text="Table Of Five"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_25"
+            android:textStyle="bold" />
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/table_6"
+        android:layout_width="@dimen/dim_250"
+        android:layout_height="@dimen/dim_65"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim_55"
+        android:background="@drawable/two_table_dash_box">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:text="Table Of Six"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_25"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/table_7"
+        android:layout_width="@dimen/dim_250"
+        android:layout_height="@dimen/dim_65"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim_40"
+        android:background="@drawable/three_table_dash_box">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:text="Table Of Seven"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_25"
+            android:textStyle="bold" />
+    </LinearLayout>-->
+
+</LinearLayout>

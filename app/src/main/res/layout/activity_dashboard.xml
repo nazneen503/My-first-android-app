@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".dashboard">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/dim_200"
+                android:layout_height="@dimen/dim_65"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_30"
+                android:background="@drawable/dash_learning">
+
+                <ImageView
+                    android:layout_width="@dimen/dim_50"
+                    android:layout_height="@dimen/dim_45"
+                    android:layout_marginLeft="@dimen/dim_15"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:src="@drawable/ic_learning" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:text="Learning"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:focusedByDefault="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_25"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/number_box"
+                    android:layout_width="@dimen/dim_180"
+                    android:layout_height="@dimen/dim_180"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_marginTop="@dimen/dim_20"
+                    android:background="@drawable/dash_box1">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_110"
+                        android:layout_height="@dimen/dim_110"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dim_20"
+                        android:background="@drawable/dash_number_circle" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_90"
+                        android:layout_height="@dimen/dim_110"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dim_20"
+                        android:src="@drawable/ic_numbers" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dim_140"
+                        android:text="Numbers"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dim_17" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/table_box"
+                    android:layout_width="@dimen/dim_180"
+                    android:layout_height="@dimen/dim_180"
+                    android:layout_marginLeft="@dimen/dim_15"
+                    android:layout_marginTop="@dimen/dim_20"
+                    android:background="@drawable/dash_box1">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_110"
+                        android:layout_height="@dimen/dim_110"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dim_20"
+                        android:background="@drawable/dash_table_circle" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_80"
+                        android:layout_height="@dimen/dim_70"
+                        android:layout_marginLeft="@dimen/dim_50"
+                        android:layout_marginTop="@dimen/dim_40"
+                        android:src="@drawable/ic_tables" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dim_140"
+                        android:text="Tables"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dim_17" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dim_200"
+                android:layout_height="@dimen/dim_65"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_30"
+                android:background="@drawable/dash_quiz">
+
+                <ImageView
+                    android:layout_width="@dimen/dim_50"
+                    android:layout_height="@dimen/dim_45"
+                    android:layout_marginLeft="@dimen/dim_15"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:src="@drawable/ic_quiz" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:text="Quiz"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_25"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dim_30">
+
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

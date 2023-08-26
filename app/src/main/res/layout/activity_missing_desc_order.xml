@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/dsc"
+    tools:context=".missing_desc_order">
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="@dimen/dim_250"
+        android:layout_height="@dimen/dim_250"
+        android:id="@+id/animation"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+
+        />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="@dimen/dim_33"
+                android:layout_height="@dimen/dim_20"
+                android:src="@drawable/ic_left_arrow"
+                android:layout_marginTop="@dimen/dim_193"
+                android:layout_marginRight="-20dp"/>
+            <RelativeLayout
+                android:layout_width="@dimen/dim_365"
+                android:layout_height="@dimen/dim_5"
+                android:background="@android:color/white"
+                android:layout_marginTop="@dimen/dim_200" />
+            <ImageView
+                android:layout_width="@dimen/dim_33"
+                android:layout_height="@dimen/dim_20"
+                android:src="@drawable/ic_play_arrow"
+                android:layout_marginTop="@dimen/dim_193"
+                android:layout_marginLeft="-20dp"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_30"
+            android:layout_marginLeft="@dimen/dim_20">
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_450"
+            android:layout_marginLeft="@dimen/dim_20">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+</RelativeLayout>

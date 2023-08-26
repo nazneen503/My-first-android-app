@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/missingno"
+    android:orientation="vertical"
+    tools:context=".dash_missing_no">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rlAsc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/dim_33"
+                android:layout_height="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_193"
+                android:layout_marginRight="-20dp"
+                android:src="@drawable/ic_left_arrow" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dim_365"
+                android:layout_height="@dimen/dim_5"
+                android:layout_marginTop="@dimen/dim_200"
+                android:background="@android:color/white" />
+
+            <ImageView
+                android:layout_width="@dimen/dim_33"
+                android:layout_height="@dimen/dim_20"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="@dimen/dim_193"
+                android:src="@drawable/ic_play_arrow" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_20"
+            android:layout_marginTop="@dimen/dim_140"/>
+
+        <TextView
+            android:id="@+id/asc"
+            android:layout_width="@dimen/dim_300"
+            android:layout_height="@dimen/dim_50"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:layout_marginTop="@dimen/dim_250"
+            android:background="@drawable/missing_asc_box"
+            android:gravity="center"
+            android:text="ASCENDING ORDER"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_25"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlAsc"
+        android:layout_marginTop="@dimen/dim_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/dim_33"
+                android:layout_height="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_93"
+                android:layout_marginRight="-20dp"
+                android:src="@drawable/ic_left_arrow" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dim_365"
+                android:layout_height="@dimen/dim_5"
+                android:layout_marginTop="@dimen/dim_100"
+                android:background="@android:color/white" />
+
+            <ImageView
+                android:layout_width="@dimen/dim_33"
+                android:layout_height="@dimen/dim_20"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="@dimen/dim_93"
+                android:src="@drawable/ic_play_arrow" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_20"
+            android:layout_marginTop="-70dp" />
+        <TextView
+            android:id="@+id/desc1"
+            android:layout_width="@dimen/dim_300"
+            android:layout_height="@dimen/dim_50"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:layout_marginTop="@dimen/dim_190"
+            android:background="@drawable/missing_desc_box"
+            android:gravity="center"
+            android:text="DESCENDING ORDER"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_25"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFA960"
+    tools:context=".dash_counting">
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+   <!-- <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagercount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_80">
+    </android.support.v4.view.ViewPager>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_250"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/number_bg"
+        android:layout_marginTop="@dimen/dim_120">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/opt1"
+            android:onClick="check"
+            android:layout_width="@dimen/dim_60"
+            android:layout_height="@dimen/dim_80"
+            android:background="@drawable/dash_counting_box"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="30sp"
+            android:layout_marginTop="@dimen/dim_460"/>
+
+        <Button
+            android:id="@+id/opt2"
+            android:onClick="check"
+            android:layout_width="@dimen/dim_60"
+            android:layout_height="@dimen/dim_80"
+            android:background="@drawable/dash_counting_box"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="30sp"
+            android:layout_marginTop="@dimen/dim_460"/>
+        <Button
+            android:id="@+id/opt3"
+            android:onClick="check"
+            android:layout_width="@dimen/dim_60"
+            android:layout_height="@dimen/dim_80"
+            android:background="@drawable/dash_counting_box"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="30sp"
+            android:layout_marginTop="@dimen/dim_460"/>
+    </LinearLayout>
+
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_210"
+        android:background="@drawable/number_bg"
+        android:layout_marginTop="@dimen/dim_70">
+        <ImageView
+            android:layout_width="@dimen/dim_80"
+            android:layout_height="@dimen/dim_100"
+            android:src="@drawable/ic_count_fish"
+            android:layout_marginTop="@dimen/dim_20"
+            android:layout_marginLeft="@dimen/dim_60"/>
+        <ImageView
+
+            android:layout_width="@dimen/dim_80"
+            android:layout_height="@dimen/dim_100"
+            android:src="@drawable/ic_count_fish"
+            android:layout_marginTop="@dimen/dim_80"
+            />
+        <ImageView
+            android:layout_width="@dimen/dim_80"
+            android:layout_height="@dimen/dim_100"
+            android:src="@drawable/ic_count_fish"
+            android:layout_marginTop="@dimen/dim_20"/>
+        <ImageView
+            android:layout_width="@dimen/dim_80"
+            android:layout_height="@dimen/dim_100"
+            android:src="@drawable/ic_count_fish"
+            android:layout_marginTop="@dimen/dim_90"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="@dimen/dim_60"
+        android:layout_height="@dimen/dim_80"
+        android:background="@drawable/dash_counting_box"
+        android:layout_marginLeft="@dimen/dim_50"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dim_90">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dim_60" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dim_60"
+        android:layout_height="@dimen/dim_80"
+        android:background="@drawable/dash_counting_box"
+        android:layout_marginLeft="@dimen/dim_50"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dim_90">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dim_60" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dim_60"
+        android:layout_height="@dimen/dim_80"
+        android:background="@drawable/dash_counting_box"
+        android:layout_marginLeft="@dimen/dim_50"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dim_90">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dim_60" />
+    </LinearLayout>
+</LinearLayout>-->
+    <!--<RelativeLayout
+        android:layout_width="@dimen/dim_800"
+        android:layout_height="@dimen/dim_40"
+        android:layout_alignParentBottom="true"
+
+        android:background="@android:color/white">
+        <Button
+            android:id="@+id/btn_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/white"
+            android:text="Previous"
+            android:paddingLeft="@dimen/dim_10"
+            android:paddingRight="@dimen/dim_10"
+            android:textAllCaps="false"
+            android:textColor="#FFA960"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+
+            android:paddingRight="@dimen/dim_10"
+            android:background="@android:color/white"
+            android:text="Next"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#FFA960"/>
+
+    </RelativeLayout>-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="@dimen/dim_250"
+        android:layout_height="@dimen/dim_250"
+        android:id="@+id/animation"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:focusedByDefault="true">
+    <LinearLayout
+        android:id="@+id/table_2"
+        android:layout_width="@dimen/dim_250"
+        android:layout_height="@dimen/dim_65"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim_20"
+        android:background="@drawable/two_table_dash_box">
+        <TextView
+            android:id="@+id/texttableno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_50"
+            android:text="Table Of Two"
+
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_25"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

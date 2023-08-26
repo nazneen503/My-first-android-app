@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_180"
+    android:layout_marginTop="@dimen/dim_30"
+    android:paddingRight="@dimen/dim_5"
+    android:paddingLeft="5dp"
+    android:paddingStart="@dimen/dim_5">
+
+    <RelativeLayout
+
+        android:id="@+id/relative_match"
+        android:layout_width="@dimen/dim_90"
+        android:layout_height="@dimen/dim_160"
+        android:background="@drawable/quiz_match_no"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/match_img"
+            android:layout_width="@dimen/dim_80"
+            android:layout_height="@dimen/dim_100"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:layout_marginTop="@dimen/dim_5"/>
+
+        <ImageView
+            android:id="@+id/match_imgReverse"
+            android:layout_width="@dimen/dim_80"
+            android:layout_height="@dimen/dim_100"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dim_5" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

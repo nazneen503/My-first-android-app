@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".splash">
+     <RelativeLayout
+         android:id="@+id/splash"
+         android:layout_width="@dimen/dim_150"
+         android:layout_height="@dimen/dim_150"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="@dimen/dim_30"
+         android:background="@drawable/logo_bg">
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:src="@drawable/logo"/>
+
+     </RelativeLayout>
+     <TextView
+         android:id="@+id/textv1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Pooh Kids"
+         android:textColor="#FF9000"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="@dimen/dim_200"
+         android:layout_marginLeft="@dimen/dim_230"
+         android:textSize="40sp"
+         android:fontFamily="@font/hang1"/>
+     <TextView
+         android:id="@+id/textv2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Learning"
+         android:textColor="#DA2D28"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="@dimen/dim_240"
+         android:layout_marginLeft="@dimen/dim_230"
+         android:textSize="40sp"
+         android:fontFamily="@font/hang1"/>
+</RelativeLayout>

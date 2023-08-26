@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poohkidslearning">
+<uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".table_dashboard" />
+        <activity android:name=".missing_desc_order" />
+        <activity android:name=".missing_ascending_order" />
+        <activity android:name=".dash_missing_no" />
+        <activity android:name=".match_real_img" />
+        <activity android:name=".dash_counting" />
+        <activity android:name=".dash_match_no" />
+        <activity android:name=".dash_table_learn" />
+        <activity android:name=".dash_number_learn" />
+        <activity android:name=".dashboard" />
+        <activity android:name=".profile" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
